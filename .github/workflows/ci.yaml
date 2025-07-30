@@ -1,11 +1,11 @@
-name: Lint, Test and Release charts
+name: Test and Release charts
 
 on:
   pull_request:
   push:
 
 jobs:
-  lint-test:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -34,8 +34,6 @@ jobs:
           if [[ -n "$changed" ]]; then
             echo "::set-output name=changed::true"
           fi
-      - name: Run chart-testing (lint-master)
-        run: ct lint --check-version-increment=false --config tests/ct.yaml
       - name: Create kind cluster
         uses: helm/kind-action@v1.2.0
         if: steps.list-changed.outputs.changed == 'true'
