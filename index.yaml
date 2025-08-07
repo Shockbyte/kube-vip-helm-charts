@@ -2,6 +2,19 @@ apiVersion: v1
 entries:
   kube-vip:
   - apiVersion: v2
+    appVersion: v1.0.0
+    created: "2025-08-07T08:15:14.818067124Z"
+    description: A Helm chart for kube-vip
+    digest: 83338509cc0fb2e286831e0d1ef1604e5e42a13c522387fe71653e67c5a04b87
+    icon: https://github.com/kube-vip/kube-vip/raw/main/kube-vip.png
+    maintainers:
+    - name: kube-vip
+    name: kube-vip
+    type: application
+    urls:
+    - https://github.com/Shockbyte/kube-vip-helm-charts/releases/download/kube-vip-1.0.0/kube-vip-1.0.0.tgz
+    version: 1.0.0
+  - apiVersion: v2
     appVersion: v0.9.2
     created: "2025-07-30T12:08:54.730199426Z"
     description: A Helm chart for kube-vip
@@ -27,4 +40,4 @@ entries:
     urls:
     - https://github.com/Shockbyte/kube-vip-helm-charts/releases/download/kube-vip-0.9.1/kube-vip-0.9.1.tgz
     version: 0.9.1
-generated: "2025-07-30T12:08:54.730210928Z"
+generated: "2025-08-07T08:15:14.818084577Z"
